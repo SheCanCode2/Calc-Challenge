@@ -10,6 +10,7 @@
 
  //get the value of pressed button and display it on the screen
 function getValue(element){
+	console.log(element.value)
 	let value
 	if(!operator && !result){
 		value = value1 += element.value
@@ -53,3 +54,11 @@ function getResponse(){
 	}
 }
 
+//rese the caculator
+function clearAll(){
+	operator = undefined
+	value1=''
+	value2=''
+	result = undefined
+	display.value = 0
+}
